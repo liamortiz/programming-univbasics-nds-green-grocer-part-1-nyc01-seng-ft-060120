@@ -17,7 +17,10 @@ def consolidate_cart(cart)
   # Return a new array of hashes
   
   # Returns a new array
+  temp = []
   arr = cart.select do |item_hash|
+    item_name = item_hash[:item]
+    
     item_hash[:item] == "AVOCADO"
   end
   puts arr[0]
