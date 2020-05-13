@@ -16,9 +16,14 @@ def consolidate_cart(cart)
   # Each item will be giving a count attribute stating their count numbers based on name
   # Return a new array of hashes
   
-  cart.map do |item|
-    item[:count]
+  arr = cart.map do |item|
+    if !item.key?(:count)
+      item[:count] = 1
+    else
+      item[:count] += 1
+    end
   end
+  puts arr
 
 end
 
