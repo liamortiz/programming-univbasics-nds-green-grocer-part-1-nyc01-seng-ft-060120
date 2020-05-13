@@ -11,19 +11,11 @@ def consolidate_cart(cart)
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   
-  # Loop over the cart
-  # Scan all items within the cart
-  # Each item will be giving a count attribute stating their count numbers based on name
-  # Return a new array of hashes
-  
-  # Returns a new array
-  temp = []
-  arr = cart.select do |item_hash|
-    item_name = item_hash[:item]
+  # For each repetition of an item, it needs to update the other array with the count value
+  arr1 = [] # Will contain filtered items
+  cart.each do |item|
     
-    item_hash[:item] == "AVOCADO"
   end
-  puts arr[0]
 end
 
 
