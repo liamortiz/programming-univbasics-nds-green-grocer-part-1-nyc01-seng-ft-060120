@@ -17,6 +17,7 @@ def consolidate_cart(cart)
   # Return a new array of hashes
   
   arr = cart.map do |item|
+    puts item
     if not item.key?(:count)
       item[:count] = 1
     else
