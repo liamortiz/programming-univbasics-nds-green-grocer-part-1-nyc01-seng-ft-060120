@@ -13,8 +13,12 @@ def consolidate_cart(cart)
   
   # Loop over the cart
   # Scan all items within the cart
+  # Each item will be giving a count attribute stating their count numbers based on name
+  # Return a new array of hashes
   
-  # Return a new array
+  cart.map do |item|
+    item[:count]
+  end
 
 end
 
