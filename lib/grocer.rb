@@ -12,10 +12,10 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   
   # For each repetition of an item, it needs to update the other array with the count value
-  arr1 = [] # Will contain filtered items
-  cart.each do |item|
-    
-  end
+  
+  
+  filtered = cart
+  
 end
 
 
