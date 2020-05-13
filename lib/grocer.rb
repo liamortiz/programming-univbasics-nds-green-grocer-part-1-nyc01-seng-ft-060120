@@ -15,8 +15,9 @@ def consolidate_cart(cart)
   # Scan all items within the cart
   # Each item will be giving a count attribute stating their count numbers based on name
   # Return a new array of hashes
-  
-
+  cart.map do |item|
+    if 
+  end
 end
 
 
