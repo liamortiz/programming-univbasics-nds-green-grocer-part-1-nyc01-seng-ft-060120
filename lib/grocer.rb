@@ -14,8 +14,20 @@ def consolidate_cart(cart)
   # For each repetition of an item, it needs to update the other array with the count value
   
   
-  filtered = cart
-  
+  # Need to check if an object is already in an array
+  # If is not then add it
+  # Do it based on their names
+  filtered_array = []
+  cart.each do |item|
+    tmp = find_item_by_name_in_collection(item[:item], filtered_array)
+    if tmp
+      tmp[:count] += 1
+    else
+      item[:count] = 1
+      filtered_array << item
+    end
+  end
+  return filtered_array
 end
 
 
