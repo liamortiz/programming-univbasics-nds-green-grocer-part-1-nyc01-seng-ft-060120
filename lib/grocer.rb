@@ -20,7 +20,7 @@ def consolidate_cart(cart)
   arr = cart.select do |item_hash|
     item_hash[:item] == "AVOCADO"
   end
-  puts arr
+  puts arr[0]
 end
 
 
