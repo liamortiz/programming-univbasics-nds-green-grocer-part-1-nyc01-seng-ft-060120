@@ -12,9 +12,9 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   
   filtered_array = []
-  
   cart.each do |item|
     target_item = find_item_by_name_in_collection(item[:item], filtered_array)
+    
     if target_item
       target_item[:count] += 1
     else
@@ -22,6 +22,7 @@ def consolidate_cart(cart)
       filtered_array << item
     end
   end
+  
   return filtered_array
 end
 
